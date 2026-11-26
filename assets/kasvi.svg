@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="otsikko">
+  <title id="otsikko">Kasvi saviruukussa</title>
+  <rect width="800" height="600" fill="#e8dccb"/>
+  <rect x="510" y="74" width="205" height="281" rx="103" fill="#f4eedf"/>
+  <path d="M0 485H800V600H0Z" fill="#c7b79f"/>
+  <ellipse cx="390" cy="508" rx="150" ry="24" fill="#ad9d85"/>
+  <path d="M395 409V180" fill="none" stroke="#395a43" stroke-width="11" stroke-linecap="round"/>
+  <path d="M397 280Q257 282 265 153 390 159 397 280Z" fill="#71865c"/>
+  <path d="M395 348Q244 348 243 237 365 229 395 348Z" fill="#4f7351"/>
+  <path d="M397 242Q408 115 532 117 540 231 397 242Z" fill="#42674b"/>
+  <path d="M397 330Q420 215 553 237 538 342 397 330Z" fill="#829a68"/>
+  <path d="M295 389H496L473 500H318Z" fill="#b66f4f"/>
+  <rect x="283" y="372" width="224" height="31" rx="5" fill="#cb8865"/>
+  <path d="M331 418 343 480" fill="none" stroke="#d69a79" stroke-width="8" stroke-linecap="round"/>
+</svg>

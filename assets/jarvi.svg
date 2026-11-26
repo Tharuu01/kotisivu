@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="otsikko">
+  <title id="otsikko">Järvimaisema</title>
+  <rect width="800" height="600" fill="#e8eadc"/>
+  <circle cx="585" cy="155" r="67" fill="#dba666"/>
+  <path d="M0 340 170 180 360 350 560 225 800 355V600H0Z" fill="#9da88c"/>
+  <path d="M0 395 220 315 440 420 640 330 800 390V600H0Z" fill="#4f7560"/>
+  <path d="M0 428Q200 395 400 428T800 428V600H0Z" fill="#abc5c0"/>
+  <path d="M0 498Q200 465 400 498T800 498M0 552Q200 519 400 552T800 552" fill="none" stroke="#dce3d6" stroke-width="5"/>
+  <path d="M98 393v105m-44-42 44-65 44 65m-44-40 33 48m-33-48-33 48" fill="none" stroke="#2e5342" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+</svg>

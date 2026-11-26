@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="otsikko">
+  <title id="otsikko">Talo puun vieressä</title>
+  <rect width="800" height="600" fill="#dce6df"/>
+  <circle cx="173" cy="153" r="60" fill="#e4c28a"/>
+  <path d="M0 455Q210 374 420 448T800 428V600H0Z" fill="#a6b497"/>
+  <path d="M247 278H568V490H247Z" fill="#ede0c5"/>
+  <path d="M218 282 408 137 596 282Z" fill="#98624e"/>
+  <rect x="468" y="160" width="40" height="80" fill="#98624e"/>
+  <rect x="380" y="370" width="67" height="120" rx="33" fill="#5a735d"/>
+  <rect x="288" y="330" width="58" height="67" rx="3" fill="#789d9a"/>
+  <rect x="471" y="330" width="58" height="67" rx="3" fill="#789d9a"/>
+  <path d="M317 330V397M288 363H346M500 330V397M471 363H529" stroke="#f5ebd8" stroke-width="6"/>
+  <path d="M647 322V495" stroke="#76624c" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="647" cy="280" r="80" fill="#6c8964"/>
+  <circle cx="610" cy="324" r="56" fill="#6c8964"/>
+  <path d="M393 490 344 600H487L435 490Z" fill="#d1c4a6"/>
+</svg>
