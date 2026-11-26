@@ -1,0 +1,234 @@
+/* 1. Yhteiset värit ja perusasetukset. */
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f7f5ef;
+  color: #26372f;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+[hidden] { display: none !important; }
+a { color: #2f6349; text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+a, button { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid #2f6349; outline-offset: 5px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { line-height: 1.15; letter-spacing: -0.035em; }
+h1 { margin: 0 0 24px; font-size: clamp(40px, 6vw, 70px); }
+h2 { margin: 0 0 18px; font-size: 28px; }
+h3 { margin: 0 0 10px; font-size: 21px; }
+p { margin: 0 0 18px; }
+.container { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
+main { padding: 64px 0; min-height: calc(100vh - 180px); }
+.lead { max-width: 58ch; color: #56635a; font-size: 19px; }
+.eyebrow { color: #2f6349; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.note { color: #56635a; font-size: 14px; }
+.section { margin-top: 72px; }
+
+/* 2. Navigaatio ja näppäimistöllä käytettävä ohituslinkki. */
+.skip-link { position: absolute; top: 12px; left: 12px; padding: 10px 16px; background: white; transform: translateY(-180%); z-index: 1; }
+.skip-link:focus { transform: translateY(0); }
+.site-header { border-bottom: 1px solid #d3dace; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: #26372f; font-size: 20px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.brand-dot { width: 12px; height: 12px; background: #2f6349; border-radius: 50%; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px; }
+.site-nav a { padding: 7px 14px; color: #56635a; font-size: 14px; text-decoration: none; border-radius: 30px; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { background: #e8eddf; color: #2f6349; }
+
+/* 3. Etusivun esittely, painikkeet ja sivukortit. */
+.hero { display: grid; grid-template-columns: 1.15fr 0.85fr; align-items: center; gap: 64px; }
+.postcard { margin: 0; padding: 12px 12px 8px; background: #fffdf8; border: 1px solid #d3dace; transform: rotate(2deg); }
+.postcard img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.postcard figcaption { padding: 14px 4px 6px; color: #56635a; font-size: 13px; }
+.hello-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 11px 18px; border: 1px solid #2f6349; border-radius: 5px; background: #2f6349; color: white; font-size: 14px; font-weight: 700; text-decoration: none; }
+.button:hover { background: #234c37; }
+.button-secondary { background: transparent; color: #2f6349; }
+.button-secondary:hover { background: #e8eddf; }
+.tip { margin: 24px 0 0; padding: 16px 20px; background: #e8eddf; border-left: 3px solid #2f6349; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.link-card { display: block; padding-top: 22px; border-top: 1px solid #d3dace; color: #26372f; text-decoration: none; }
+.link-card:hover h3 { color: #2f6349; text-decoration: underline; text-underline-offset: 5px; }
+.link-card h3 { display: flex; justify-content: space-between; }
+.link-card p { color: #56635a; font-size: 15px; }
+.card-number { display: block; margin-bottom: 18px; color: #2f6349; font-size: 12px; }
+.contact { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding: 32px; background: #e8eddf; border-radius: 8px; }
+.contact p:last-child { margin-bottom: 0; }
+.contact a { overflow-wrap: anywhere; font-weight: 700; }
+
+/* 4. Galleria: kolme kuvaa rinnakkain. */
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 36px 0; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid #d3dace; border-radius: 4px; }
+.gallery figcaption { padding: 20px 0 0; }
+.gallery h2 { margin-bottom: 8px; font-size: 21px; }
+.gallery p { color: #56635a; font-size: 15px; }
+
+/* 5. CV ja oman sivun harjoitusalue. */
+.cv-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; margin-top: 40px; }
+.cv-section { margin-bottom: 36px; padding-top: 24px; border-top: 1px solid #d3dace; }
+.cv-section h2 { font-size: 24px; }
+.cv-section h3 { font-size: 18px; }
+.cv-section a { overflow-wrap: anywhere; }
+.meta { margin-bottom: 8px; color: #2f6349; font-size: 13px; font-weight: 700; }
+.skill-list { padding-left: 20px; }
+.skill-list li { margin-bottom: 6px; }
+.own-content { margin: 36px 0; padding: 32px 0; border-top: 1px solid #d3dace; }
+.task-box { max-width: 720px; padding: 28px; background: #e8eddf; border: 1px dashed #8b9f88; border-radius: 8px; }
+.task-box h2 { font-size: 25px; }
+.task-box ol { padding-left: 22px; }
+.task-box li { margin-bottom: 8px; }
+.task-box .note { margin-bottom: 0; }
+
+/* 6. Kaikilla sivuilla yhteinen alatunniste. */
+.site-footer { border-top: 1px solid #d3dace; }
+.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 24px 0; color: #56635a; font-size: 13px; }
+
+/* 7. Pienellä näytöllä sisältö siirtyy yhteen sarakkeeseen. */
+@media (max-width: 760px) {
+  .container { width: calc(100% - 36px); }
+  .header-inner { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .site-nav { margin-left: -10px; }
+  .site-nav a { padding: 7px 10px; }
+  main { padding: 40px 0; }
+  .hero, .cv-grid { grid-template-columns: 1fr; gap: 32px; }
+  .postcard { max-width: 460px; margin: 12px 5px 0; }
+  .cards, .gallery { grid-template-columns: 1fr; }
+  .section { margin-top: 48px; }
+  .contact { padding: 24px; }
+  .gallery { max-width: 520px; gap: 28px; }
+  .cv-grid { gap: 0; }
+}
+
+/* KOTISIVU_CSS_JATKO_V2 eyJ2ZXJzaW9uIjoyLCJiYXNlTGVuZ3RoIjo2MDAyLCJ2YWx1ZXMiOnsicGFnZUJhY2tncm91bmQiOiIjZmVmN2RjIiwicGFuZWxCYWNrZ3JvdW5kIjoiI2NlYWE4OCIsInBob3RvQmFja2dyb3VuZCI6IiNmZmZmZmYiLCJ0ZXh0Q29sb3IiOiIjMjQxZDE5IiwibXV0ZWRDb2xvciI6IiM0YjJhMmEiLCJhY2NlbnRUZXh0Q29sb3IiOiIjNWMyZDJkIiwiYWNjZW50QmFja2dyb3VuZENvbG9yIjoiIzY4MzczNyIsImFjY2VudEJvcmRlckNvbG9yIjoiIzJmNjM0OSIsImJ1dHRvblRleHRDb2xvciI6IiNmZmZmZmYiLCJmb250RmFtaWx5IjoiQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIsImZvbnRTaXplIjoxOSwibGluZUhlaWdodCI6MS45NSwibGVhZFNpemUiOjIyLCJoZWFkaW5nTWF4Ijo2NywiaGVhZGluZzJTaXplIjozMSwiY29udGVudFdpZHRoIjoxMTIwLCJtYWluUGFkZGluZyI6OTYsInNlY3Rpb25HYXAiOjEyMCwiYm9yZGVyQ29sb3IiOiIjYjc4NTg1IiwiY2FyZFJhZGl1cyI6MiwicG9zdGNhcmRSYWRpdXMiOjAsImdhbGxlcnlHYXAiOjM4LCJpbWFnZVJhdGlvIjoiMSAvIDEiLCJpbWFnZVJhZGl1cyI6MTYsImhvdmVyQmFja2dyb3VuZCI6IiM3NjQxNDEiLCJob3ZlclNvZnRCYWNrZ3JvdW5kIjoiI2Y3ZGRjZiIsImZvY3VzQ29sb3IiOiIjMWUwYTBhIiwiZm9jdXNXaWR0aCI6MiwibW9iaWxlU2lkZVNwYWNlIjozNiwibW9iaWxlTWFpblBhZGRpbmciOjQwLCJtb2JpbGVHYWxsZXJ5R2FwIjoyOH0sImVkaXRlZCI6WyJwYWdlQmFja2dyb3VuZCIsInBhbmVsQmFja2dyb3VuZCIsInBob3RvQmFja2dyb3VuZCIsInRleHRDb2xvciIsIm11dGVkQ29sb3IiLCJhY2NlbnRUZXh0Q29sb3IiLCJhY2NlbnRCYWNrZ3JvdW5kQ29sb3IiLCJidXR0b25UZXh0Q29sb3IiLCJmb250RmFtaWx5IiwiZm9udFNpemUiLCJsaW5lSGVpZ2h0IiwibGVhZFNpemUiLCJoZWFkaW5nTWF4IiwiaGVhZGluZzJTaXplIiwiY29udGVudFdpZHRoIiwibWFpblBhZGRpbmciLCJzZWN0aW9uR2FwIiwiYm9yZGVyQ29sb3IiLCJjYXJkUmFkaXVzIiwiZ2FsbGVyeUdhcCIsImltYWdlUmF0aW8iLCJpbWFnZVJhZGl1cyIsImhvdmVyQmFja2dyb3VuZCIsImhvdmVyU29mdEJhY2tncm91bmQiLCJmb2N1c0NvbG9yIiwiZm9jdXNXaWR0aCJdfQ== */
+
+
+/* === OMA TEEMA: CSS-jatkon lisätyt tyylit === */
+/* 1. Taustat */
+body {
+  background: #fef7dc;
+}
+.tip,
+.contact,
+.task-box {
+  background: #ceaa88;
+}
+.postcard {
+  background: #ffffff;
+}
+
+/* 2. Tekstin väri */
+body,
+.brand,
+.link-card {
+  color: #241d19;
+}
+.lead,
+.note,
+.site-nav a,
+.postcard figcaption,
+.link-card p,
+.gallery p,
+.footer-inner {
+  color: #4b2a2a;
+}
+
+/* 3. Korostusvärit */
+a,
+.eyebrow,
+.card-number,
+.meta,
+.button-secondary,
+.link-card:hover h3,
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: #5c2d2d;
+}
+.brand-dot,
+.button:where(:not(.button-secondary)) {
+  background: #683737;
+}
+.button:where(:not(.button-secondary)) {
+  color: #ffffff;
+}
+
+/* 4. Kirjasin */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 5. Tekstin koko */
+body {
+  font-size: 19px;
+  line-height: 1.95;
+}
+.lead {
+  font-size: 22px;
+}
+
+/* 6. Otsikot */
+h1 {
+  font-size: clamp(40px, 6vw, 67px);
+}
+h2 {
+  font-size: 31px;
+}
+
+/* 7. Leveys ja välit */
+@media (min-width: 761px) {
+  .container {
+    width: min(1120px, calc(100% - 48px));
+  }
+  main {
+    padding: 96px 0;
+  }
+  .section {
+    margin-top: 120px;
+  }
+}
+
+/* 8. Reunat ja kulmat */
+.site-header,
+.site-footer,
+.postcard,
+.link-card,
+.gallery img,
+.cv-section,
+.own-content {
+  border-color: #b78585;
+}
+.contact,
+.task-box {
+  border-radius: 2px;
+}
+
+/* 9. Galleria */
+@media (min-width: 761px) {
+  .gallery {
+    gap: 38px;
+  }
+}
+.gallery img {
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+}
+
+/* 10. Hiiri ja näppäimistö */
+.button:not(.button-secondary):hover {
+  background: #764141;
+}
+.button-secondary:hover,
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: #f7ddcf;
+}
+:focus-visible {
+  outline-color: #1e0a0a;
+  outline-width: 2px;
+}
+/* === OMA TEEMA PÄÄTTYY === */
+
+/* KOTISIVU_CSS_JATKO_LOPPU */

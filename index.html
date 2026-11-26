@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oman kotisivun harjoituspohja: esittely, galleria ja CV.">
+  <title>Oma kotisivuni – Tharuli Liyanage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+<!-- OMA_KOTISIVU_JS_V1_HEAD_ALKU -->
+<link rel="stylesheet" href="opiskelijan-js/tyylit.css">
+<script src="opiskelijan-js/toiminnot.js" defer></script>
+<!-- OMA_KOTISIVU_JS_V1_HEAD_LOPPU -->
+</head>
+<body>
+  <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+
+  <!-- Kaikilla neljällä sivulla on sama navigaatio. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span><span>Tharuli Liyanage</span></a>
+      <nav class="site-nav" aria-label="Päänavigaatio">
+        <a href="index.html" aria-current="page">Etusivu löytyy täältä</a>
+        <a href="galleria.html">Galleria</a>
+        <a href="cv.html">CV</a>
+        <a href="oma-sivu.html">Oma sivu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="sisalto" tabindex="-1">
+    <section class="hero" aria-labelledby="esittely-otsikko">
+      <div>
+        <p class="eyebrow">Tervetuloa kotisivuilleni</p>
+        <h1 id="esittely-otsikko">Oma kotisivuni</h1>
+        <p class="lead">Hei!
+Tervetuloa verkkosivuilleni. Täältä löydät esittelyn, kuvagallerian sekä CV:ni.</p>
+        <p>Tykkään oppia uusia asioita ja työskennellä omien projektieni parissa. Täältä löytyvät kuvani ja kokemukseni.</p>
+        <div class="hello-actions">
+          <a class="button" href="galleria.html">Tutustu galleriaan <span aria-hidden="true">↗</span></a>
+          <button class="button button-secondary" type="button" id="tietoa-painike" aria-controls="lisatieto" aria-expanded="false">Näytä lisätieto</button>
+        </div>
+        <!-- JavaScript näyttää ja piilottaa tämän kappaleen. -->
+        <p class="tip" id="lisatieto" hidden>Lisätietoa harrastuksistani ja kiinnostuksenkohteistani.</p>
+      </div>
+      <figure class="postcard">
+        <img src="assets/jarvi.svg" width="320" height="240" alt="Kuva järvestä, vihreistä kukkuloista ja kirkkaasta keltaisesta auringosta.">
+        <figcaption>Järvimaisema</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="tutustu-otsikko">
+      <p class="eyebrow">Sivuston sisältö</p>
+      <h2 id="tutustu-otsikko">Tutustu muihin sivuihin</h2>
+      <div class="cards">
+        <a class="link-card" href="galleria.html"><span class="card-number">01</span><h3><span>Galleria</span><span aria-hidden="true">↗</span></h3><p>Kuvagalleria ja kuvatekstit.</p></a>
+        <a class="link-card" href="cv.html"><span class="card-number">02</span><h3><span>CV</span><span aria-hidden="true">↗</span></h3><p>Koulutus, kokemus ja osaaminen.</p></a>
+        <a class="link-card" href="oma-sivu.html"><span class="card-number">03</span><h3><span>Oma sivu</span><span aria-hidden="true">↗</span></h3><p>Itse valitsemani aihe.</p></a>
+      </div>
+    </section>
+
+    <section class="section contact" aria-labelledby="yhteystiedot">
+      <div><p class="eyebrow">Ota yhteyttä</p><h2 id="yhteystiedot">Yhteystiedot</h2><p>Ota yhteyttä sähköpostitse.</p></div>
+      <a href="mailto:ruhansatharuli@gmail.com"><span>ruhansatharuli@gmail.com</span> <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span>Tharuli Liyanage</span></span><span>Oma kotisivu</span></div>
+<!-- OMA_KOTISIVU_JS_V1_FOOTER_ALKU -->
+<div class="container oma-js-footer">
+  <span>Vuosi <span id="oma-js-vuosi">–</span></span>
+  <button class="button button-secondary" id="oma-js-ylos" type="button">Takaisin ylös</button>
+</div>
+<!-- OMA_KOTISIVU_JS_V1_FOOTER_LOPPU -->
+</footer>
+</body>
+</html>

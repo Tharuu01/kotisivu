@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oman kotisivun vapaavalintainen sivu.">
+  <title>Harrastukseni – Tharuli Liyanage</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- OMA_KOTISIVU_JS_V1_HEAD_ALKU -->
+<link rel="stylesheet" href="opiskelijan-js/tyylit.css">
+<script src="opiskelijan-js/toiminnot.js" defer></script>
+<!-- OMA_KOTISIVU_JS_V1_HEAD_LOPPU -->
+</head>
+<body>
+  <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span><span>Tharuli Liyanage</span></a>
+      <nav class="site-nav" aria-label="Päänavigaatio">
+        <a href="index.html">Etusivu löytyy täältä</a>
+        <a href="galleria.html">Galleria</a>
+        <a href="cv.html">CV</a>
+        <a href="oma-sivu.html" aria-current="page">Oma sivu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="sisalto" tabindex="-1">
+    <p class="eyebrow">Oma sisältö</p>
+    <h1>Harrastukseni</h1>
+    <p class="lead">Harrastukset auttavat minua vähentämään stressiä ja tuovat tasapainoa elämääni.</p>
+
+    <!-- ALOITA OMA TOTEUTUS TÄSTÄ: vaihda otsikko ja kirjoita oma teksti. -->
+    <section class="own-content" aria-labelledby="oma-otsikko">
+      <h2 id="oma-otsikko">Harrastuksista saatavat hyödyt</h2>
+      <p>Se parantaa mielenterveyttäsi, fyysistä hyvinvointiasi ja sosiaalisia suhteitasi vähentämällä stressiä ja tarjoamalla palkitsevan tauon arjen rutiineista.</p>
+      <!-- Voit lisätä esimerkiksi kuvan, listan tai toisen kappaleen. -->
+    </section>
+
+    <!-- Tämän ohjelaatikon voi poistaa, kun oma sivu on valmis. -->
+    
+<!-- OMA_KOTISIVU_JS_V1_MAIN_ALKU -->
+<section class="section oma-js-toiminnot" id="oma-js-toiminnot" aria-labelledby="oma-js-otsikko">
+  <h2 id="oma-js-otsikko">Lisätietoa ja tekstikokeilu</h2>
+  <div class="oma-js-lisatiedot">
+    <button class="button button-secondary" id="oma-js-lisatieto-painike" type="button" aria-controls="oma-js-lisatieto" aria-expanded="false">Näytä lisätieto</button>
+    <p class="tip oma-js-lisatieto" id="oma-js-lisatieto" hidden>Valokuvagalleriassa voit tutustua kuviini sekä projekteihin, joiden parissa olen tähän mennessä työskennellyt.</p>
+  </div>
+  <form class="oma-js-form" id="oma-js-tekstilomake" novalidate>
+    <label id="oma-js-tekstin-otsikko" for="oma-js-teksti">Kirjoita lyhyt esittely</label>
+    <p class="note" id="oma-js-kokeiluohje">Kokeile tekstin kirjoittamista. Tekstiä ei lähetetä eikä tallenneta.</p>
+    <textarea id="oma-js-teksti" rows="4" maxlength="150" aria-describedby="oma-js-kokeiluohje oma-js-merkkimaara oma-js-tarkistusviesti"></textarea>
+    <p class="note oma-js-laskuri" id="oma-js-merkkimaara">0 / 150 merkkiä</p>
+    <button class="button" type="submit">Tarkista teksti</button>
+    <p class="oma-js-palaute" id="oma-js-tarkistusviesti" role="status" aria-live="polite"></p>
+  </form>
+</section>
+<!-- OMA_KOTISIVU_JS_V1_MAIN_LOPPU -->
+</main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span>Tharuli Liyanage</span></span><a href="index.html#yhteystiedot">Yhteystiedot</a></div>
+<!-- OMA_KOTISIVU_JS_V1_FOOTER_ALKU -->
+<div class="container oma-js-footer">
+  <span>Vuosi <span id="oma-js-vuosi">–</span></span>
+  <button class="button button-secondary" id="oma-js-ylos" type="button">Takaisin ylös</button>
+</div>
+<!-- OMA_KOTISIVU_JS_V1_FOOTER_LOPPU -->
+</footer>
+</body>
+</html>

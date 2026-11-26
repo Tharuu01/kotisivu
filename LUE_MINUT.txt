@@ -1,0 +1,16 @@
+OMA KOTISIVU
+
+Tässä paketissa ovat opetusdemossa kirjoittamasi tekstit.
+Pura koko ZIP ja avaa index.html selaimessa.
+
+Sivut: index.html, galleria.html, cv.html ja oma-sivu.html.
+style.css on kaikkien sivujen yhteinen tyylitiedosto.
+script.js ohjaa etusivun Näytä lisätieto -painiketta.
+assets-kansiossa ovat mukana tulevat kuvat.
+
+Voit muokata tiedostoja tekstieditorilla ja päivittää selaimen.
+Lataus sisältää koko nelisivuisen sivuston kaikilla tyyleillä.
+Opetusdemon ohjaimet ja tehtävälaatikko eivät sisälly sivustoon.
+
+Jos muutat tekstejä uudelleen opetusdemossa, lataa uusi ZIP.
+Demossa kirjoittaminen ei muuta aiemmin lataamiasi tiedostoja.
